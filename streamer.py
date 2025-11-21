@@ -1,5 +1,6 @@
 import cv2
 
+
 def stream(video, queue):
     cap = cv2.VideoCapture(video)
     while cap.isOpened():
