@@ -19,4 +19,4 @@ def detect(images, procesed_images):
                 x, y, w, h = cv2.boundingRect(c)
                 rects.append((x, y, w, h))
 
-        procesed_images.put(frame, rects)
+        procesed_images.put((frame, rects))
