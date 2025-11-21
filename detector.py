@@ -7,7 +7,7 @@ def detect(images, procesed_images):
     while True:
         frame = images.get()
         if frame is None:
-            procesed_images.put(frame)
+            procesed_images.put(None)
             break
         image = back.apply(frame)
         thresh = cv2.threshold(image, 0, 255, cv2.THRESH_BINARY)[1]

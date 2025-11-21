@@ -9,5 +9,6 @@ def stream(video, queue):
             break
 
         queue.put(frame)
+    queue.put(None)
     queue.close()
     cap.release()

@@ -6,12 +6,13 @@ from presenter import present
 from multiprocessing import Process, Queue
 
 if __name__ == "__main__":
-    video_url = ""
+    print("Please enter Videos URL:")
+    url = input()
 
     q1 = Queue(maxsize=Q1_size)
     q2 = Queue(maxsize=Q2_size)
 
-    p1 = Process(target=stream, args=(video_url, q1))
+    p1 = Process(target=stream, args=(url, q1))
     p2 = Process(target=detect, args=(q1, q2))
     p3 = Process(target=present, args=(q2,))
 
