@@ -1,5 +1,14 @@
-
 Time_struct = "%H:%M:%S"
 Windows_name = "Detections"
 Q1_size = 1000
 Q2_size = 1000
+Blurx = 35
+Blury = 35
+Ditect_rect_color_B = 0
+Ditect_rect_color_G = 255
+Ditect_rect_color_R = 0
+Time_color_B = 0
+Time_color_G = 0
+Time_color_R = 0
+Time_thickness = 3
+Time_font_size = 2

@@ -5,7 +5,7 @@ from presenter import present
 
 from multiprocessing import Process, Queue
 
-if __name__=="__main__":
+if __name__ == "__main__":
     video_url = ""
 
     q1 = Queue(maxsize=Q1_size)
